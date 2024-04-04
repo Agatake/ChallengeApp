@@ -3,20 +3,20 @@ namespace ChallengeApp.Tests
     public class Tests
     {
         [Test]
-        public void WhenEmployeeCollectScores_ShouldReturnCorrectResult1()
+        public void WhenEmployee1CollectScores_ShouldReturnCorrectResult()
         {
             //act
             var employee1 = new Employee("Janek", "Nowak", 20);
             employee1.AddScore(-1);
-            employee1.AddScore(2);
-            employee1.AddScore(3);
+            employee1.AddScore(-2);
+            employee1.AddScore(-3);
             //arrange
             var result = employee1.Result; 
             //assert
-            Assert.AreEqual(4, result);
+            Assert.AreEqual(-6, result);
         }
         [Test]
-        public void WhenEmployeeCollectScores_ShouldReturnCorrectResult2()
+        public void WhenEmployee2CollectScores_ShouldReturnCorrectResult()
         {
             //act
             var employee2 = new Employee("Zuzia", "Kowalska", 21);
@@ -29,7 +29,7 @@ namespace ChallengeApp.Tests
             Assert.AreEqual(7, result);
         }
         [Test]
-        public void WhenEmployeeCollectScores_ShouldReturnCorrectResult3()
+        public void WhenEmployee3CollectScores_ShouldReturnCorrectResult()
         {
             //act
             var employee3 = new Employee("Ala", "Malinowska", 22);

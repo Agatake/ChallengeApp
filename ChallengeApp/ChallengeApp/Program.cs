@@ -5,8 +5,8 @@ Employee employee2 = new Employee("Zuzia","Kowalska",21);
 Employee employee3 = new Employee("Ala","Malinowska",22);
 
 employee1.AddScore(-1);
-employee1.AddScore(2);
-employee1.AddScore(3);
+employee1.AddScore(-2);
+employee1.AddScore(-3);
 
 employee2.AddScore(-4);
 employee2.AddScore(5);
