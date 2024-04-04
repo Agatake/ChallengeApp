@@ -8,13 +8,13 @@ employee1.AddScore(1);
 employee1.AddScore(2);
 employee1.AddScore(3);
 
-employee2.AddScore(4);
+employee2.AddScore(-4);
 employee2.AddScore(5);
 employee2.AddScore(6);
 
 employee3.AddScore(7);
 employee3.AddScore(8);
-employee3.AddScore(9);
+employee3.AddScore(-9);
 
 List<Employee> employees = new List<Employee>()
 {
