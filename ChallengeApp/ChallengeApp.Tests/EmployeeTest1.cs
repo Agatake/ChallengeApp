@@ -3,43 +3,43 @@ namespace ChallengeApp.Tests
     public class Tests
     {
         [Test]
-        public void WhenEmloyeeCollectScores_ShouldReturnCorrectResult1()
+        public void WhenEmployeeCollectScores_ShouldReturnCorrectResult1()
         {
             //act
-            var employee = new Employee("Janek", "Nowak", 20);
-            employee.AddScore(1);
-            employee.AddScore(2);
-            employee.AddScore(3);
+            var employee1 = new Employee("Janek", "Nowak", 20);
+            employee1.AddScore(-1);
+            employee1.AddScore(2);
+            employee1.AddScore(3);
             //arrange
-            var result = employee.Result; 
+            var result = employee1.Result; 
             //assert
-            Assert.AreEqual(6, result);
+            Assert.AreEqual(4, result);
         }
         [Test]
-        public void WhenEmloyeeCollectScores_ShouldReturnCorrectResult2()
+        public void WhenEmployeeCollectScores_ShouldReturnCorrectResult2()
         {
             //act
-            var employee = new Employee("Zuzia", "Kowalska", 21);
-            employee.AddScore(-4);
-            employee.AddScore(5);
-            employee.AddScore(6);
+            var employee2 = new Employee("Zuzia", "Kowalska", 21);
+            employee2.AddScore(-4);
+            employee2.AddScore(5);
+            employee2.AddScore(6);
             //arrange
-            var result = employee.Result;
+            var result = employee2.Result;
             //assert
             Assert.AreEqual(7, result);
         }
         [Test]
-        public void WhenEmloyeeCollectScores_ShouldReturnCorrectResult3()
+        public void WhenEmployeeCollectScores_ShouldReturnCorrectResult3()
         {
             //act
-            var employee = new Employee("Ala", "Malinowska", 22);
-            employee.AddScore(7);
-            employee.AddScore(8);
-            employee.AddScore(-9);
+            var employee3 = new Employee("Ala", "Malinowska", 22);
+            employee3.AddScore(7);
+            employee3.AddScore(8);
+            employee3.AddScore(9);
             //arrange
-            var result = employee.Result;
+            var result = employee3.Result;
             //assert
-            Assert.AreEqual(6, result);
+            Assert.AreEqual(24, result);
         }
     }
 }

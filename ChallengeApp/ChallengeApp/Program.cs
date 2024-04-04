@@ -4,7 +4,7 @@ Employee employee1 = new Employee("Janek","Nowak",20);
 Employee employee2 = new Employee("Zuzia","Kowalska",21);
 Employee employee3 = new Employee("Ala","Malinowska",22);
 
-employee1.AddScore(1);
+employee1.AddScore(-1);
 employee1.AddScore(2);
 employee1.AddScore(3);
 
@@ -14,7 +14,7 @@ employee2.AddScore(6);
 
 employee3.AddScore(7);
 employee3.AddScore(8);
-employee3.AddScore(-9);
+employee3.AddScore(9);
 
 List<Employee> employees = new List<Employee>()
 {
